@@ -5,21 +5,6 @@ import (
 	"time"
 )
 
-type GameI interface {
-	GetFood()
-	CheckFood()
-	CheckMove() bool
-	MoveUp()
-	MoveRight()
-	MoveDown()
-	MoveLeft()
-	ResetGame()
-	GetTail()
-	Min() int
-	GetRand() (int, int)
-	GetBoardEnd() (int, int)
-}
-
 // Game stores all the game data
 type Game struct {
 	Direction string
@@ -41,7 +26,7 @@ type Game struct {
 }
 
 // Intialize the game
-func NewGame() GameI {
+func NewGame() *Game {
 	g := new(Game)
 
 	g.boardHeight = 20
@@ -119,7 +104,7 @@ func (g *Game) CheckFood() {
 			g.board[g.tailX][g.tailY] = 1
 
 		default:
-			panic("Direction is wrong")
+			panic("direction is wrong")
 		}
 
 		g.GetFood()
