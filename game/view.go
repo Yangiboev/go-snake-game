@@ -20,7 +20,7 @@ const (
 	boardStartY         = titleEndY + defaultMarginHeight
 	cellWidth           = 2
 )
-const title = "Simple "
+const title = "Simple Snake game with golang"
 
 // gameDetails stores template of the score board
 var gameDetails = []string{
