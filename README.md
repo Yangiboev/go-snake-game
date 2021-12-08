@@ -27,3 +27,16 @@ make tidy
 ```bash
 go run cmd/main.go
 ```
+
+## Instructions
+
+- Use arrow keys to move your snake.
+- Press q, esc, Ctrl+C or Ctrl+D to quit the game.
+- Hitting the wall or snake itself means GAME OVER.
+- Eat food to increase score and length of snake.
+
+
+## Time taken
+
+> Time taken on this project 5 hours 
+
